@@ -1,5 +1,5 @@
 
-# Deskside Tool
+# Deskside Tool 🔧
 
 An all-in-one PowerShell script that assembles and automates common Deskside Technician tasks & tools
 
