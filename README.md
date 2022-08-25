@@ -20,6 +20,10 @@ An all-in-one PowerShell script that assembles and automates common Deskside Tec
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) (Optional, but makes the console look cuter)
 
 
+## Setup
+Modify the variables under the Variables header in the script to suit your environment
+
+
 ## Usage
 
 Create a shortcut with `powershell.exe -noexit -ExecutionPolicy Bypass -File path\to\dstool.ps1` and run shortcut as admin
