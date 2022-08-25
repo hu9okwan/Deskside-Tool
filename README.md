@@ -47,19 +47,35 @@ Run PowerShell in admin -> Enter `& path\to\dstool.ps1`
 5. **Remote Machine Menu**
     - Submenu that features the following scripts to be executed on a remote computer:
         1. **System Info**
+            - Returns the Boot, Machine/Device Specs, OS, Storage Info, and currently connected monitors 
         2. **Installed Programs**
+            -  Queries registry for local machine installs + current user's registry and returns list of installed programs with their info
         3. **c$**
+            -  Opens file explorer to \computername\c$ of remote computer
         4. **Transfer Files**
+            -  Transfers selected files to C:\temp of remote computer
         5. **Map Network Drive**
+            - Remotely maps a network drive by creating a scheduled task under the logged on user and running it immediately. Will pick the next available drive letter ascending from Z
         6. **Map Network Printer**
+            -  Remotely adds a network printer by creating a scheduled task under the logged on user and running it immediately
         7. **GPUpdate**
+            - Runs gpupdate /force on remote computer
         8. **McAfee Agent Actions**
+            - Runs Collect and Send Props, Send Events, Check New Policies, and Enforce Policies
         9. **Configuration Manager Actions**
-        0. **Clear CCM Cache**
-        -. **Clear MSTeams Cache**
-        =. **Remote Control Viewer**
-        D. **Deploy DisplayLink**
-        F. **Deploy McAfee FRP**
+            - Runs MachinePolicy, AppDeployment, HardwareInventory, UpdateDeployment, UpdateScan, and SoftwareInventory
+        10. **Clear CCM Cache**
+            - Clears CCM cache by running Control Panel > Configuration Manager > Cache Tab > Delete Files
+        11. **Clear MSTeams Cache**
+            - Removes the cache storing folders found in C:\Users\*\AppData\Roaming\Microsoft\Teams
+        12. **Remote Control Viewer**
+            - Opens the SCCM Remote Control Viewer and immediately connects/sends a request to the remote machine.
+        13. **Deploy DisplayLink**
+            - Installs DisplayLink onto the remote machine and adds the all .inf files found in C:\Program Files\DisplayLink Core Software\Drivers to the driver store
+        14. **Deploy McAfee FRP**
+            - Installs McAfee File and Removable Media Protection module onto the remote machine. Upon a successful installation, the machine will require a reboot. A Windows toast notification will be sent to the machine advising the user to do so
+        15. **Lock Workstation** (Hidden)
+            - Sends a scheduled task to run immediately to lock the workstation
 6. **BitLocker Recovery Password**
     - Queries AD for the BitLocker Recovery Password using either the computer name or recovery ID key
 7. **Local Administrator Password**
