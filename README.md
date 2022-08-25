@@ -19,6 +19,7 @@ An all-in-one PowerShell script that assembles and automates common Deskside Tec
     - [AzureADPreview](https://www.powershellgallery.com/packages/AzureADPreview)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) (Optional, but makes the console look cuter)
 
+
 ## Usage
 
 Create a shortcut with `powershell.exe -noexit -ExecutionPolicy Bypass -File path\to\dstool.ps1` and run shortcut as admin
@@ -26,6 +27,14 @@ Create a shortcut with `powershell.exe -noexit -ExecutionPolicy Bypass -File pat
 OR
 
 Run PowerShell in admin -> Enter `& path\to\dstool.ps1`
+
+
+## Updates
+
+Every time the main menu is loaded, it will do a version check with the file saved on the network drive. (May change this to check this repo for updates in the future) If a newer version is found, a message will be displayed under the banner. Press U while on the main menu to update to the latest version.
+
+
+
 ## Features
 
 1. **Initial Machine Setup**
