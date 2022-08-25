@@ -88,7 +88,7 @@ Run PowerShell in admin -> Enter `& path\to\dstool.ps1`
 9. **AzureAD Portal**
     - Links to Azure AD portal
 0. **Generate Reports**
-    - A submenu that features report generation to Excel. Only whitelisted users will be able to use this option.
+    - Submenu that features report generation to Excel. Only whitelisted users will be able to use this option.
         1. **Machine Data**
             - Queries SCCM and returns a report of machine data for all machines in the specified region. This includes system info such as computer name, last logon user and time, SCCM version, OS version, device manufacturer/model/serial number
         2. **Machines Active Monitor Info**
