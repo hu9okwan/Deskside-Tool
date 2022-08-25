@@ -60,7 +60,7 @@ Every time the main menu is loaded, it will do a version check with the file sav
         2. **Installed Programs**
             -  Queries registry for local machine installs + current user's registry and returns list of installed programs with their info
         3. **c$**
-            -  Opens file explorer to \\computername\c$ of remote computer
+            -  Opens file explorer to \\\\computername\c$ of remote computer
         4. **Transfer Files**
             -  Transfers selected files to C:\temp of remote computer
         5. **Map Network Drive**
