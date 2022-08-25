@@ -15,9 +15,9 @@ An all-in-one PowerShell script that assembles and automates common Deskside Tec
     - Azure AD
 - The following PowerShell modules (will be automatically installed when required):
     - ActiveDirectory
-    - ImportExcel
-    - AzureADPreview
-- Windows Terminal (Optional, but makes the console look cuter)
+    - [ImportExcel](https://www.powershellgallery.com/packages/ImportExcel)
+    - [AzureADPreview](https://www.powershellgallery.com/packages/AzureADPreview)
+- [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) (Optional, but makes the console look cuter)
 
 ## Usage
 
@@ -46,7 +46,20 @@ Run PowerShell in admin -> Enter `& path\to\dstool.ps1`
     - Queries SCCM and returns all machines that has the Primary User, Current Logged on User, or Last Logged on User as the given user.
 5. **Remote Machine Menu**
     - Submenu that features the following scripts to be executed on a remote computer:
-        1. 
+        1. **System Info**
+        2. **Installed Programs**
+        3. **c$**
+        4. **Transfer Files**
+        5. **Map Network Drive**
+        6. **Map Network Printer**
+        7. **GPUpdate**
+        8. **McAfee Agent Actions**
+        9. **Configuration Manager Actions**
+        0. **Clear CCM Cache**
+        -. **Clear MSTeams Cache**
+        =. **Remote Control Viewer**
+        D. **Deploy DisplayLink**
+        F. **Deploy McAfee FRP**
 6. **BitLocker Recovery Password**
     - Queries AD for the BitLocker Recovery Password using either the computer name or recovery ID key
 7. **Local Administrator Password**
@@ -59,7 +72,7 @@ Run PowerShell in admin -> Enter `& path\to\dstool.ps1`
 9. **AzureAD Portal**
     - Links to Azure AD portal
 0. **Generate Reports**
-    - A submenu that features report generation to Excel
+    - A submenu that features report generation to Excel. Only whitelisted users will be able to use this option.
         1. **Machine Data**
             - Queries SCCM and returns a report of machine data for all machines in the specified region. This includes system info such as computer name, last logon user and time, SCCM version, OS version, device manufacturer/model/serial number
         2. **Machines Active Monitor Info**
