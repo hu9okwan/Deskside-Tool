@@ -29,7 +29,7 @@ Run PowerShell in admin -> Enter `& path\to\dstool.ps1`
 ## Features
 
 1. **Initial Machine Setup**
-    - Script that is executed on newly imaged machines to patch and fix what the image or task sequence missed
+    - Executes a separate script on newly imaged machines to apply patches/fixes as to what the image or task sequence missed. This is specific to only our images and the script will not be included as such.
 2. **Rename Computer**
     - Renames a remote computer with option of restarting. If restarting is elected, BitLocker will be suspended for 1 reboot so that the computer can be accessed remotely after.
 3. **Active Directory User**
