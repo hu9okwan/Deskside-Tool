@@ -3,7 +3,7 @@
 
 An all-in-one PowerShell script that assembles and automates common Deskside Technician tasks & tools
 
-
+![Main Menu](./screenshots/mainmenu.png)
 
 ## Requirements
 
