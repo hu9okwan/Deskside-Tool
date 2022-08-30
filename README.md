@@ -105,7 +105,7 @@ Every time the main menu is loaded, it will do a version check with the file sav
         1. **Machine Data**
             - Queries SCCM and returns a report of machine data for all machines in the specified region. This includes system info such as computer name, last logon user and time, SCCM version, OS version, device manufacturer/model/serial number
         2. **Machines Active Monitor Info**
-            - Remotely executes a command on all machines in the specified region to retrieve its connected monitors' information. Includes Manufacturer, Model, and Serial Number.
+            - Remotely executes a command on all online machines in the specified region to retrieve its connected monitors' information. Includes Manufacturer, Model, and Serial Number.
         3. **Machines with Specified Software Installed**
          	- Queries SCCM and returns a report of all machines in the specified region that has the given software installed
         4. **Machines without Specified Software Installed**
@@ -113,9 +113,9 @@ Every time the main menu is loaded, it will do a version check with the file sav
         5. **Client Status Check**
             - Queries SCCM and returns a report of the information found in the Client Check Detail tab of SCCM for all machines in the specified region
         6. **SCCM Health Check**
-            - Remotely executes a command on all machines in the specified region to retrieve their SCCM health check result found in the C:\Windows\CCM\CcmEvalReport.xml file. 
+            - Remotely executes a command on all online machines in the specified region to retrieve their SCCM health check result found in the C:\Windows\CCM\CcmEvalReport.xml file. 
         7. **BitLocker Status**
-            - Remotely executes a command on all machines in the specified region to retrieve their BitLocker status on the C: drive
+            - Remotely executes a command on all online machines in the specified region to retrieve their BitLocker status on the C: drive
         8. **SCCM and SAP Comparison Report**
             - Queries SCCM and compares it with given SAP report
             - Returns a report of machines with any of the following dissimilarities:
