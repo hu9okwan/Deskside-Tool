@@ -59,8 +59,9 @@ Every time the main menu is loaded, it will do a version check with the file sav
             - Unlocks the user's account if it becomes locked due to too many incorrect password attempts
 4. **Find Computer Name**
     - Queries SCCM and returns all machines that has the Primary User, Current Logged on User, or Last Logged on User as the given user.
+    - ![FindComputerName](./screenshots/findcomputername.png)
 5. **Remote Machine Menu**
-    - ![Remote Machine Menu](./screenshots/remotemachinemenu1.png)
+    - ![Remote Machine Menu](./screenshots/remotemachinemenu.png)
     - Submenu that features the following scripts to be executed on a remote computer:
         1. **System Info**
             - Returns the Boot, Machine/Device Specs, OS, Storage Info, and currently connected monitors 
@@ -94,8 +95,10 @@ Every time the main menu is loaded, it will do a version check with the file sav
             - Sends a scheduled task to run immediately to lock the workstation
 6. **BitLocker Recovery Password**
     - Queries AD for the BitLocker Recovery Password using either the computer name or recovery ID key
+    - ![BitLocker Recovery](./screenshots/bitlocker.png)
 7. **Local Administrator Password**
-    - Queries AD for the local administrator password found in the computer's attribute properties 
+    - Queries AD for the local administrator password found in the computer's attribute properties
+    - ![LAPS](./screenshots/laps.png)
 8. **AzureAD Role Elevation**
     - Script that allows you to elevate Azure AD account privileges. The following roles are available as options:
       - Authentication Admin (MFA)
