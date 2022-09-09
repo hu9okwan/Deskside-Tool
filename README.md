@@ -37,6 +37,7 @@ Run PowerShell in admin -> Enter `& path\to\dstool.ps1`
 
 Every time the main menu is loaded, it will do a version check with the file saved on the network drive. (May change this to check this repo for updates in the future) If a newer version is found, a message will be displayed under the banner. Press U while on the main menu to update to the latest version.
 
+![Updates](./screenshots/update.png)
 
 
 ## Features
@@ -46,6 +47,7 @@ Every time the main menu is loaded, it will do a version check with the file sav
 2. **Rename Computer**
     - Renames a remote computer with option of restarting. If restarting is elected, BitLocker will be suspended for 1 reboot so that the computer can be accessed remotely after.
 3. **Active Directory User**
+    - ![ADUser Menu](./screenshots/adusermenu.png)
     - Submenu that features the following:
         1. **User Information**
             - Queries AD and returns attributes relating to the user
@@ -58,6 +60,7 @@ Every time the main menu is loaded, it will do a version check with the file sav
 4. **Find Computer Name**
     - Queries SCCM and returns all machines that has the Primary User, Current Logged on User, or Last Logged on User as the given user.
 5. **Remote Machine Menu**
+    - ![Remote Machine Menu](./screenshots/remotemachinemenu1.png)
     - Submenu that features the following scripts to be executed on a remote computer:
         1. **System Info**
             - Returns the Boot, Machine/Device Specs, OS, Storage Info, and currently connected monitors 
@@ -101,6 +104,7 @@ Every time the main menu is loaded, it will do a version check with the file sav
 9. **AzureAD Portal**
     - Links to Azure AD portal
 0. **Generate Reports**
+    - ![Reports Menu](./screenshots/reportsmenu.png)
     - Submenu that features report generation to Excel. Only whitelisted users will be able to use this option.
         1. **Machine Data**
             - Queries SCCM and returns a report of machine data for all machines in the specified region. This includes system info such as computer name, last logon user and time, SCCM version, OS version, device manufacturer/model/serial number
